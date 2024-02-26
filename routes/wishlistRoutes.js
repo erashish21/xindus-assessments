@@ -8,6 +8,12 @@ router.get("/", ensureAuthenticated, wishlistController.getWishlist);
 
 router.post("/", ensureAuthenticated, wishlistController.createWishlistItem);
 
+// router.post("/", ensureAuthenticated, (req, res) => {
+//   console.log("Received POST request to /api/wishlists");
+//   // ... (rest of the code)
+// });
+
+
 router.delete(
   "/:id",
   ensureAuthenticated,
