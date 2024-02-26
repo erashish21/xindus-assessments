@@ -1,7 +1,7 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 
-const User = require("./models/User"); // Adjust the path based on your actual file structure
+const User = require("../models/User");
 
 passport.use(
   new LocalStrategy(

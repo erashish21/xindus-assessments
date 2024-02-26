@@ -1,6 +1,6 @@
 const express = require("express");
 const wishlistController = require("../controllers/wishlistController");
-const ensureAuthenticated = require("../middlewares/ensureAuthenticated"); // You need to create this middleware
+const ensureAuthenticated = require("../config/ensureAuthenticated");
 
 const router = express.Router();
 
